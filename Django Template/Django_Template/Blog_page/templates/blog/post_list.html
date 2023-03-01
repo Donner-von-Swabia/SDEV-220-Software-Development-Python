@@ -1,13 +1,21 @@
-{% extends 'blog/base.html' %}
+<div data-gb-custom-block data-tag="extends" data-0='blog/base.html'></div>
 
-{% block content %}
-    {% for post in posts %}
-        <article class="post">
-            <time class="date">
+<div data-gb-custom-block data-tag="block"></div>
+
+    
+
+<div data-gb-custom-block data-tag="for"></div>
+
+        <div class="post">
+            <div class="date">
                 {{ post.published_date }}
-            </time>
-            <h2><a href="">{{ post.title }}</a></h2>
+            </div>
+            <h1><a href="
+
+            <div data-gb-custom-block data-tag="url" data-0='post_detail'>">{{ post.title }}</a></h1>
             <p>{{ post.text|linebreaksbr }}</p>
-        </article>
-    {% endfor %}
-{% endblock %}
+            <a href="<div data-gb-custom-block data-tag="url" data-0='post_detail'></div>">Comments: {{ post.approved_comments.count }}</a>
+        </div>
+    </div>
+
+</div>
